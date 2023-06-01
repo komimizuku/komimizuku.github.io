@@ -983,6 +983,11 @@ img {
   background: url(../img/qa-bg.png) no-repeat center center/cover;
   background-attachment: fixed;
 }
+@media (max-width: 767px) {
+  .qa {
+    background-attachment: scroll;
+  }
+}
 
 .qa__title {
   text-align: center;
