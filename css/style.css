@@ -497,7 +497,7 @@ img {
   .news__text {
     font-size: 14px;
     letter-spacing: 0;
-    padding: 8px 45px 0 0;
+    padding: 4px 45px 4px 0;
     line-height: 1.428;
     width: 100%;
   }
@@ -585,10 +585,12 @@ img {
 }
 
 .service__item {
+  width: 33.3%;
   padding: 71px 45px 60px;
 }
 @media (max-width: 767px) {
   .service__item {
+    width: 100%;
     padding: 50px 16px 0;
   }
   .service__item:last-child {
@@ -1256,7 +1258,9 @@ img {
   border: none;
   border-bottom: 1px solid #3E3E3E;
   background: #FFFFFF;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-radius: 0;
   color: inherit;
   font-family: inherit;
@@ -1267,7 +1271,7 @@ img {
 }
 @media (max-width: 767px) {
   .contact input[type=text],
-  .contact input[type=email] {
+.contact input[type=email] {
     font-size: 14px;
     padding: 1px 0;
   }
@@ -1278,6 +1282,9 @@ img {
   box-shadow: 0 8px 5px -4px rgba(73, 115, 255, 0.5);
   border-bottom: 1px solid #3B69FF;
   outline: none;
+}
+.contact input::-moz-placeholder {
+  opacity: 0.5;
 }
 .contact input::placeholder {
   opacity: 0.5;
@@ -1302,7 +1309,9 @@ img {
   width: 178px;
   height: 40px;
   font-size: 16px;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   padding: 0 12px;
   outline: none;
 }
@@ -1316,7 +1325,9 @@ img {
   box-shadow: none;
   border: 1px solid #707070;
   background: #FFFFFF;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-radius: 0;
   color: inherit;
   font-family: inherit;
@@ -1778,4 +1789,4 @@ img {
     bottom: 13px;
     right: 16px;
   }
-}
+}}
